@@ -1,0 +1,115 @@
+/*"reiniciar" o style do navegador*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*ajustar o body*/
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background: url(img/anime-style-mountains-landscape.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*Ajustar onde ficam todo o conteudo*/
+.container{
+    background: transparent;
+    width: 400px;
+    border:2px solid rgba(255,255,255,.2);
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
+    color: white;
+    padding: 30px 35px;
+}
+
+/*Ajustes do título LOGIN*/
+
+.container h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold; 
+}
+
+/*Ajuste dos Inputs de senha e email*/
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.input-box input{
+    border:2px solid rgba(255,255,255,.2);
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    color: white;
+    padding: 20px;
+    outline: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+/*Ajustes do remember me box e do link de Esqueceu a senha*/
+
+.remember{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 16px 5px 16px;
+}
+
+.remember label input{
+    margin-right: 4px;
+    accent-color: white;
+}
+
+.remember a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+/*Ajustes do botão de login*/
+
+.btn{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    margin: 10px 0 10px 0 ;
+    color: rgb(71, 71, 71);
+}
+
